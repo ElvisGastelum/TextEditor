@@ -72,10 +72,12 @@
             this.Fonts.Items.AddRange(new object[] {
             "Sans Serif",
             "Serif",
-            "Monospace"});
+            "Monospace",
+            "Papyrus",
+            "Ravie"});
             this.Fonts.Location = new System.Drawing.Point(6, 19);
             this.Fonts.Name = "Fonts";
-            this.Fonts.Size = new System.Drawing.Size(177, 56);
+            this.Fonts.Size = new System.Drawing.Size(177, 82);
             this.Fonts.TabIndex = 1;
             // 
             // FontFamilyWindow

@@ -78,14 +78,14 @@
             // textoToolStripMenuItem
             // 
             this.textoToolStripMenuItem.Name = "textoToolStripMenuItem";
-            this.textoToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.textoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.textoToolStripMenuItem.Text = "Nuevo";
             this.textoToolStripMenuItem.Click += new System.EventHandler(this.NewText);
             // 
             // cerrarToolStripMenuItem
             // 
             this.cerrarToolStripMenuItem.Name = "cerrarToolStripMenuItem";
-            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(109, 22);
+            this.cerrarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cerrarToolStripMenuItem.Text = "Cerrar";
             this.cerrarToolStripMenuItem.Click += new System.EventHandler(this.Close);
             // 

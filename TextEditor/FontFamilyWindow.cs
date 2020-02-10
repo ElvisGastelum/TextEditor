@@ -26,11 +26,6 @@ namespace TextEditor
             text.Font = new Font(family, text.Font.Size, OptionsFontActived);
         }
 
-        public Font ChangeFontFamilyOld(TextBox text, FontFamily family)
-        {
-            return new Font(family, text.Font.Size, OptionsFontActived);
-        }
-
         private void AcceptButtonClick(object sender, EventArgs e)
         {
             ChangeFontFamily();
@@ -50,7 +45,18 @@ namespace TextEditor
                 case "Monospace":
                     ChangeFontFamily(TextBox, FontFamily.GenericMonospace);
                     break;
+                case "Papyrus":
+                    ChangeFontFamily(TextBox, "Papyrus");
+                    break;
+                case "Ravie":
+                    ChangeFontFamily(TextBox, "Ravie");
+                    break;
             }
+        }
+
+        public void ChangeFontFamily(TextBox text, string family)
+        {
+            text.Font = new Font(family, text.Font.Size, OptionsFontActived);
         }
 
         private void FontFamilyWindow_Load(object sender, EventArgs e)
@@ -65,6 +71,12 @@ namespace TextEditor
                     break;
                 case "Courier New":
                     Fonts.SelectedIndex = 2;
+                    break;
+                case "Papyrus":
+                    Fonts.SelectedIndex = 3;
+                    break;
+                case "Ravie":
+                    Fonts.SelectedIndex = 4;
                     break;
                 default:
                     Fonts.SelectedIndex = 0;
